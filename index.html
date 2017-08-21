@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WorldCup</title>
+    <link rel="stylesheet/less" href="index.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+    <script>less.watch();</script>
+
+</head>
+<body>
+<h1>共嗨世界杯</h1>
+<div class="football-pitch" id="pitch">
+    <div class="lines">
+        <div class="halfway-line"></div>
+        <div class="center-circle"></div>
+        <div class="center-spot"></div>
+        <div class="penalty-arc-container-left">
+            <div class="penalty-arc"></div>
+        </div>
+        <div class="penalty-area-left"></div>
+        <div class="penalty-spot-left"></div>
+        <div class="goal-area-left"></div>
+        <div class="corner-area-left-top"></div>
+        <div class="corner-area-left-bottom"></div>
+        <div class="penalty-area-right"></div>
+        <div class="penalty-spot-right"></div>
+        <div class="goal-area-right"></div>
+        <div class="corner-area-right-top"></div>
+        <div class="corner-area-right-bottom"></div>
+    </div>
+
+    <div class="schedules">
+        <div class="match-vs16 match-49">1A - 2B</div>
+        <div class="match-vs16 match-50">1C - 2D</div>
+        <div class="match-vs16 match-51">1E - 2F</div>
+        <div class="match-vs16 match-52">1H - 2I</div>
+        <div class="match-vs16 match-53">1J - 2K</div>
+        <div class="match-vs16 match-54">1L - 2M</div>
+        <div class="match-vs16 match-55">1N - 2O</div>
+        <div class="match-vs16 match-56">1P - 2Q</div>
+
+        <div class="match-vs8 match-57">W1 - W2</div>
+        <div class="match-vs8 match-58">W1 - W2</div>
+        <div class="match-vs8 match-59">W1 - W2</div>
+        <div class="match-vs8 match-60">W1 - W2</div>
+
+        <div class="match-vs4 match-61">L1 - L2</div>
+        <div class="match-vs4 match-62">L1 - L2</div>
+
+        <div class="match-vs2 match-63">H1 - H2</div>
+        <div class="match-vs2 match-64">H1 - H2</div>
+    </div>
+
+    <div class="football-container">
+        <div class="ball" id="ball"></div>
+        <canvas id="football" width="1000" height="500"></canvas>
+    </div>
+</div>
+</body>
+<script>
+    window.onload = function () {
+        var pitch = document.getElementById('pitch');
+
+        pitch.className = 'football-pitch ready';
+
+        football.play();
+    }
+</script>
+<script src="football.js"></script>
+</html>
